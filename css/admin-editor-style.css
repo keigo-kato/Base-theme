@@ -1,0 +1,6 @@
+@import url("common.css");
+@import url("entry.css");
+
+.entry-content {
+  width: 720px;
+}

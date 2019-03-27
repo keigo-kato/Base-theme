@@ -1,0 +1,150 @@
+@charset "utf-8";
+/* =固定ページのみに適用されます
+-------------------------------------------------------------- */
+
+/* =COMPANY
+-------------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+	#company-outline dl {
+		border-bottom: none;
+	}
+	#company-outline dt ,
+	#company-outline dd {
+		padding: 10px 20px;
+	}
+
+	#company-history dl {
+		margin-bottom: 15px;
+		border-bottom: none;
+	}
+	#company-history dt {
+		padding: 20px 20px 5px;
+	}
+	#company-history dd {
+		padding: 5px 20px 20px;
+		background: #ddd;
+	}
+}
+
+/* = CONTACT
+-------------------------------------------------------------- */
+#contact-tel.sec-contact .sec-tel-box .tel-box a {
+	font-size: 4.2rem;
+}
+#contact-form .required {
+	background-color:#d71518;
+	color: #fff;
+	font-size: 1.3rem;
+	font-weight: normal;
+	line-height: 1;
+	padding: 5px 10px;
+	float: right;
+}
+
+#form-box input[type="text"],
+#form-box input[type="tel"],
+#form-box input[type="email"],
+#form-box input[type="number"],
+#form-box input[type="url"],
+#form-box input[type="password"],
+#form-box textarea,
+#form-box select {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 5px;
+	font-size: 1.5rem;
+	line-height: 1.5;
+	background: #fcfcfc;
+	vertical-align: middle;
+	border: 1px solid #dddddd;
+}
+#form-box #zip-box {
+	display: inline-block;
+	width: 320px;
+	margin-bottom: 10px;
+}
+/*consent-box*/
+#consent-box {
+	margin: 30px 0;
+	text-align: center;
+}
+/*submit-box*/
+#submit-box {
+	margin: 30px 0 0;
+	text-align: center;
+}
+#submit-box input[type="submit"] {
+	width: 300px;
+	box-sizing: border-box;
+	display: inline-block;
+	margin: 0 auto;
+	padding: 12px 80px;
+	font-size: 1.8rem;
+	font-weight: bold;
+	background-color: #fff;
+	color: #000;
+	border: 2px solid #000;
+	transition: all 0.5s ease;
+}
+#submit-box input[type="submit"]:hover {
+	background-color: #000;
+	color: #fff;
+	transition: all 0.5s ease;
+}
+#submit-box .wpcf7-validation-errors,
+#submit-box .wpcf7-acceptance-missing {
+	padding: 15px;
+	border: 2px solid #d71518;
+	font-weight: bold;
+}
+#submit-box .wpcf7-mail-sent-ok {
+	/*完了ページ遷移の際に一瞬表示されるのを防止*/
+	display: none !important;
+}
+#submit-box img.ajax-loader {
+	display: block;
+	margin: 4px auto!important;
+}
+
+@media screen and (max-width: 767px) {
+	#contact-tel.sec-contact .sec-tel-box .tel-box a {
+		font-size: 3.2rem;
+	}
+	#form-box dl {
+		border-bottom: none;
+	}
+	#form-box dt {
+		background-color: transparent;
+		padding: 20px 0 5px;
+	}
+	#form-box dd {
+		padding: 5px 0 20px;
+	}
+	#form-box input[type="text"],
+	#form-box input[type="tel"],
+	#form-box input[type="email"],
+	#form-box input[type="password"],
+	#form-box textarea,
+	#form-box select {
+		font-size: 1.6rem;
+	}
+
+	#form-box-form-control-wrap {
+		position: relative;
+		display: inline-block;
+		width: 100%;
+	}
+
+	#form-box-submit[type="submit"] {
+		width: 240px;
+		height: 48px;
+		padding: 0;
+	}
+	#form-box-submit[type="submit"]:hover {
+		opacity: 1;
+	}
+
+}

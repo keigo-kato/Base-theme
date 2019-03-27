@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* =トップページのみに適用されます
+-------------------------------------------------------------- */
+#top-business .text-img-content-box:nth-child(odd) .img-container ,
+#top-business .text-img-content-box:nth-child(even) .text-container {
+  float: left;
+}
+#top-business .text-img-content-box:nth-child(even) .img-container ,
+#top-business .text-img-content-box:nth-child(odd) .text-container {
+  float: right;
+}
+#top-business .text-img-content-box:nth-child(even) .text-container {
+  padding-left: 0;
+}
+
